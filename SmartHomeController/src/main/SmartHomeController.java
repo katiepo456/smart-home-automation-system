@@ -4,11 +4,9 @@ import Commands.Command;
 
 public class SmartHomeController {
 	private static SmartHomeController instance;
-	Command[] onCommands;
-	Command[] offCommands;
+	Command[] commands;
 	private SmartHomeController() {
-		this.onCommands = new Command[8];
-		this.offCommands = new Command[8];
+		this.commands = new Command[16];
 		
 	}
 	public static SmartHomeController getController() {
@@ -18,14 +16,11 @@ public class SmartHomeController {
 		return instance;
 		
 	}
-	public void setCommand(int slot, Command onCommand, Command offCommand){
-		onCommands[slot] = onCommand;
-		offCommands[slot] = offCommand;
+	public void setCommand(int slot, Command command){
+		commands[slot] = command;
 	}
-	public void onButton(int slot) {
-		onCommands[slot].execute();
-	}
-	public void offButton(int slot) {
-		offCommands[slot].execute();
+	
+	public void execute(int slot) {
+		commands[slot].execute();
 	}
 }

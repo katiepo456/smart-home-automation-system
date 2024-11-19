@@ -1,11 +1,11 @@
 package Decorators;
 
-import Devices.Device;
+import Devices.Light;
 
-public class EnergySaverLight extends DeviceDecorator{
+public class EnergySaverLight extends LightDecorator{
 
-	public EnergySaverLight(Device device) {
-		super.device = device;
+	public EnergySaverLight(Light light) {
+		super.light = light;
 	}
 	@Override
 	public void execute() {
@@ -15,14 +15,14 @@ public class EnergySaverLight extends DeviceDecorator{
 
 	@Override
 	public void on() {
-		device.on();
+		light.on();
 		System.out.println("And saving energy");
 		
 	}
 
 	@Override
 	public void off() {
-		device.off();
+		light.off();
 	}
 
 }

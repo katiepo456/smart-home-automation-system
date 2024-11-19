@@ -2,10 +2,10 @@ package Devices;
 
 public class Light implements Device{
 
-	public void execute() {
-		System.out.println("turning on light");
-		
-	}
+//	public void execute() {
+//		System.out.println("turning on light");
+//		
+//	}
 
 	public void on() {
 		System.out.println("turning on light");

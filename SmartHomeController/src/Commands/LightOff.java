@@ -1,15 +1,14 @@
 package Commands;
 
-import Devices.Device;
+import Devices.Light;
 
 public class LightOff extends Command{
-	private Device device;
-	public LightOff(Device device) {
-		this.device = device;
+	private Light light;
+	public LightOff(Light light) {
+		this.light = light;
 	}
 	@Override
 	public void execute() {
-		System.out.println("Turning Light on");
-		device.off();
+		light.off();
 	}
 }

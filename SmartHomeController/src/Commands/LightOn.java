@@ -1,15 +1,15 @@
 package Commands;
 
-import Devices.Device;
+import Devices.Light;
 
 public class LightOn extends Command{
-	private Device device;
-	public LightOn(Device device) {
-		this.device = device;
+	private Light light;
+	public LightOn(Light light) {
+		this.light = light;
 	}
 	@Override
 	public void execute() {
-		device.on();
+		light.on();
 		
 	}
 
