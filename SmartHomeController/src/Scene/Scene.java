@@ -15,6 +15,7 @@ public class Scene extends Command{
 	public void execute() {
 		for (Command command : commands) {
 	        command.execute();
+	        notifyObservers(command);
 	     }
 	}
 }

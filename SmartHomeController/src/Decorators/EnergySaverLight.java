@@ -1,6 +1,7 @@
 package Decorators;
 
 import Devices.Light;
+import Commands.*;
 
 public class EnergySaverLight extends LightDecorator{
 
@@ -10,7 +11,6 @@ public class EnergySaverLight extends LightDecorator{
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
