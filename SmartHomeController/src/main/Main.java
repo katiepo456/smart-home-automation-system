@@ -1,11 +1,18 @@
+/*
+Author        : Cole Heigis & Kathryn James
+Class         : CSI-340 : Software Design Patterns
+Assignment    : Smart Home Automation System
+File Name     : Main.java
+*/
+
 package main;
 
-import Commands.*;
-import Decorators.*;
-import Devices.*;
-import Factories.*;
 import Scene.*;
+import Devices.*;
+import Commands.*;
+import Factories.*;
 import Observers.*;
+import Decorators.*;
 
 public class Main {
 	public static void main(String[] args) {
@@ -39,4 +46,5 @@ public class Main {
 		LightsOn.execute();
 
 	}
+	
 }
