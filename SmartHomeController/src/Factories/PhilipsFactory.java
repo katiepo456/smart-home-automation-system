@@ -1,15 +1,18 @@
+/*
+Author        : Cole Heigis & Kathryn James
+Class         : CSI-340 : Software Design Patterns
+Assignment    : Smart Home Automation System
+File Name     : PhilipsFactory.java
+*/
+
 package Factories;
 
-import Devices.Device;
-import Devices.Light;
-import Devices.PhilipsLight;
-import Devices.PhilipsLightAdapter;
+import Devices.*;
 
-public class PhilipsFactory extends DeviceFactory{
+public class PhilipsFactory extends DeviceFactory {
 
 	public Light createLight() {
-	return new PhilipsLightAdapter(new PhilipsLight());
-		
+		return new PhilipsLightAdapter(new PhilipsLight());
 	}
 
 	@Override

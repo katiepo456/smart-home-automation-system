@@ -2,13 +2,13 @@
 Author        : Cole Heigis & Kathryn James
 Class         : CSI-340 : Software Design Patterns
 Assignment    : Smart Home Automation System
-File Name     : Device.java
+File Name     : Observer.java
 */
 
-package Devices;
+package Observers;
 
-public interface Device {
-//	public void execute();
-//	public void on();
-//	public void off();
+import Commands.*;
+
+public interface Observer {
+	void update(Command command);
 }
