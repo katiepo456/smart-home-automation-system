@@ -2,7 +2,7 @@
 ## CSI-340-01: Cole Heigis & Katie James
 
 ### About
-The Smart Home Automation System was designed to put smart home owners in control of their own home. This system provides a controller that allows for control, scene management, and system notifications for devices in the user’s smart home. By supporting devices from different manufacturers, the system allows for integration of various devices to keep light control, door locking, and temperature management all in one place. The Smart Home Automation System employs various design techniques in order to provide flexibility and convenience to smart home management.
+This Smart Home Automation System was designed to put smart home owners in control of their own home. This system provides a controller that allows for control, scene management, and system notifications for devices in the user’s smart home. By supporting devices from different manufacturers, the system allows for integration of various devices to keep light control, door locking, and temperature management all in one place. The Smart Home Automation System employs various design techniques in order to provide flexibility and convenience to smart home management.
 
 ### Features
 The Smart Home Automation System includes the following features:
