@@ -18,6 +18,7 @@ public class Main {
 	public static void main(String[] args) {
 		SmartHomeController controller1 = SmartHomeController.getController();
 		PhilipsFactory philipsFactory = new PhilipsFactory();
+		SchlageFactory schlageFactory = new SchlageFactory();
 		Light light1 = philipsFactory.createLight();
 		light1 = new EnergySaverLight(light1);
 		Light light2 = philipsFactory.createLight();
@@ -30,7 +31,10 @@ public class Main {
 		controller1.execute(1);
 		controller1.setCommand(2, LightsOn);
 		controller1.execute(2);
-
+		Lock lock1 = schlageFactory.createLock();
+		controller1.setCommand(3, LightsOn);
+		controller1.setCommand(4, new UnlockDoor(lock1));
+		controller1.execute(4);
 		System.out.println("-------------");
 		Light light = new Light();
 		LightOn lightOnCommand = new LightOn(light);
